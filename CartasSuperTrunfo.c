@@ -16,6 +16,7 @@ int main () {
    int numeropontosturisticos = 300;
    float densidadepopulacional = populacao / areaemkm;
    float pibpercapita = pib / populacao; 
+   float superpoder;
 
    // Exibição das informações da carta 1
 
@@ -52,6 +53,8 @@ printf("A densidade populacional é: %.2f habitantes por km²\n", densidadepopul
 
 printf("O pib per capita é: %2.f\n", pibpercapita);
 
+superpoder = (float)populacao + areaemkm + pib + numeropontosturisticos + (1 / densidadepopulacional) + pibpercapita;
+printf("O super poder é: %.2f\n", superpoder);
 
 printf("Carta 02\n");
    char Estado2[20] = "Saopaulo";
@@ -63,6 +66,7 @@ printf("Carta 02\n");
    int numeropontosturisticos2 = 10;
    float densidadepopulacional2 = populacao2 / areaemkm2;
    float pibpercapita2 = pib2 / populacao2; 
+   float superpoder2;
 
 
    // Exibição das informações da carta 2
@@ -99,6 +103,43 @@ printf("Quantidade de pontos turisticos sao: %d\n", numeropontosturisticos2);
 printf("A densidade populacional é: %.2f habitantes por km²\n", densidadepopulacional2);
 
 printf("O pib per capita é: %2.f\n", pibpercapita2);
+
+superpoder2 = (float)populacao2 + areaemkm2 + pib2 + numeropontosturisticos2 + (1 / densidadepopulacional2) + pibpercapita2;
+   printf("O super poder é: %.2f\n", superpoder2);
+
+// Comparação dos atributos
+
+printf("\nComparação de cartas:\n");
+
+// Comparação de população 
+
+printf("populacao: Carta 01 venceu (%d)\n", (populacao > populacao2) ? 1 : 0);
+
+// Comparação de área 
+
+printf("area: Carta 01 venceu (%d)\n", (areaemkm > areaemkm2) ? 1 : 0);
+
+// Comparação de pib 
+
+printf("pib: Carta 01 venceu (%d)\n", (pib > pib2) ? 1 : 0);
+
+// Comparação de pontos turisticos 
+
+printf("pontosturisticos: Carta 01 venceu (%d)\n", (numeropontosturisticos > numeropontosturisticos2) ? 1 : 0);
+
+// Comparação de densidade populacional 
+
+printf("densidadepopulacional: Carta 01 venceu (%d)\n", (densidadepopulacional > densidadepopulacional2) ? 1 : 0);
+
+// Comparação de pib per capita
+
+printf("pibpercapita: Carta 01 venceu (%d)\n", (pibpercapita > pibpercapita2) ? 1 : 0);
+
+// Comparação de super poder 
+
+printf("superpoder: Carta 01 venceu (%d)\n", (superpoder > superpoder2) ? 1 : 0);
+
+// Carta 01 é a grande vencedora!
 
 return 0;
 
