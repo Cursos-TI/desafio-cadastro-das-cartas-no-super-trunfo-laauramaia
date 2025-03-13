@@ -139,7 +139,7 @@ printf("pibpercapita: Carta 01 venceu (%d)\n", (pibpercapita > pibpercapita2) ? 
 
 printf("superpoder: Carta 01 venceu (%d)\n", (superpoder > superpoder2) ? 1 : 0);
 
-// Carta 01 é a grande vencedora!
+// Carta 01 é a grande vencedora.
 
 return 0;
 
