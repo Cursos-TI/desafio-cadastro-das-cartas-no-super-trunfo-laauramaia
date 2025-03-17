@@ -113,14 +113,7 @@ printf("\nComparação de cartas:\n");
 
 // Comparação de população 
 
-printf("População: Carta 01 venceu (%d > %d)\n", populacao, populacao2);
-
-if(populacao < populacao2){
-   
-   printf("População: Carta 02 venceu (%d < %d)\n", populacao, populacao2);
-} else {
-  
-}
+printf("populacao: Carta 01 venceu (%d)\n", (populacao > populacao2) ? 1 : 0);
 
 // Comparação de área 
 
@@ -145,6 +138,8 @@ printf("pibpercapita: Carta 01 venceu (%d)\n", (pibpercapita > pibpercapita2) ? 
 // Comparação de super poder 
 
 printf("superpoder: Carta 01 venceu (%d)\n", (superpoder > superpoder2) ? 1 : 0);
+
+// Carta 01 é a grande vencedora.
 
 return 0;
 
